@@ -1,0 +1,7 @@
+{
+    "database" : "mysql",
+    "host" : "localhost",
+    "dbname" : "banco",
+    "usuario" : "root",
+    "senha" : ""
+}
