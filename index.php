@@ -4,10 +4,14 @@
 //Lib
     require_once "Lib/Tools/Url.php";
     require_once "Lib/DataBase/Connection.php";
+//AutoLoad dos Controllers e Models
+    require_once "App/autoload.php";
 //Controlers
-    require_once "App/Controller/Controller.php";
-    require_once "App/Controller/ErrorController.php";
-    require_once "App/Controller/HomeController.php";
+    // require_once "App/Controller/Controller.php";
+    // require_once "App/Controller/ErrorController.php";
+    // require_once "App/Controller/HomeController.php";
+//Models
+    // require_once "App/Model/Model.php";
 //Template do site
     $template = file_get_contents("App/Template/template.html");
 //Url
