@@ -1,9 +1,9 @@
 <?php
 //Core
     require_once "App/Core/Core.php";
-//Lib
-    require_once "Lib/Tools/Url.php";
-    require_once "Lib/DataBase/Connection.php";
+//Src
+    require_once "Src/Tools/Url.php";
+    require_once "Src/DataBase/Connection.php";
 //AutoLoad dos Controllers e Models
     require_once "App/autoload.php";
 //Controlers
