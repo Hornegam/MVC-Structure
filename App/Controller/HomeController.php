@@ -1,7 +1,7 @@
 <?php
 
-class HomeController implements Controller{
-    public function index(){
+class HomeController extends Controller{
+    public static function index(){
         echo 'home';
     }
 }

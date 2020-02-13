@@ -1,7 +1,7 @@
 <?php
 
-class ErrorController implements Controller {
-    public function index(){
+class ErrorController extends Controller {
+    public static function index(){
         echo 'erro 404';
     }
 }

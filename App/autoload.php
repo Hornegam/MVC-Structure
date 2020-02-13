@@ -11,6 +11,12 @@ spl_autoload_register(
         elseif(!strpos('Model',$classe)){
             $pasta = 'App/Model/';
         }
-        require $pasta.''.$classe.'.php';
+    //Variavel que guarda o caminho inteiro do arquivo
+        $arquivo = $pasta.''.$classe.'.php';
+    //Testa se o aquivo existe
+        if(file_exists($arquivo)){
+            //Se existir far a importação
+            require $arquivo;
+        }
     }
 );

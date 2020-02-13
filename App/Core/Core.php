@@ -8,7 +8,7 @@ class Core {
             $controller = ucfirst($url['controller']."Controller");
         }else{
             $controller = 'HomeController';
-        }
+        } 
         //error
             if(!class_exists($controller)){
                 $controller = 'ErrorController';
@@ -21,7 +21,7 @@ class Core {
         }
         //error
         if(!method_exists($controller,$metodo)){
-            $controller = 'ErrorController';
+            $controller = 'ErrorController'; 
             $metodo = 'index';
         }
 //Parametros
