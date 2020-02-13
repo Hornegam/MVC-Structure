@@ -1,3 +1,8 @@
+# Abre a conexao para todos os IPs
+allow from all
+
+# Reescreve o modo de leitura da url para ao inves de procurar
+# diretorios ou arquivos salvar o caminho em uma variavel 'url'
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
