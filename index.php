@@ -13,7 +13,9 @@
 //Models
     // require_once "App/Model/Model.php";
 //Template do site
+    $links = file_get_contents("App/Template/links.html");
     $template = file_get_contents("App/Template/template.html");
+    $scripts = file_get_contents("App/Template/scripts.html");
 //Url
     $url = isset($_GET['url'])?$_GET['url']:"";
 //Output Buffer {captura o que e exibido pelo 'Core'}
@@ -23,7 +25,9 @@
         $saida = ob_get_contents();
     ob_end_clean();
 //monta a Pagina {}
-    $pagina = str_replace('{{area dinamica}}',$saida,$template);
+    $pagina = str_replace('{{links}}',$links,$template);
+    $pagina = str_replace('{{area dinamica}}',$saida,$pagina);
+    $pagina = str_replace('{{scripts}}',$scripts,$pagina);
 //Exibe a pagina
     echo $pagina;
 
