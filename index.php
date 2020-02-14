@@ -1,17 +1,13 @@
 <?php
+//Composer
+    require_once "vendor/autoload.php";
 //Core
     require_once "App/Core/Core.php";
 //Src
-    require_once "Src/Tools/Url.php";
-    require_once "Src/DataBase/Connection.php";
+    require_once "Assets/Tools/Url.php";
+    require_once "Assets/DataBase/Connection.php";
 //AutoLoad dos Controllers e Models
     require_once "App/autoload.php";
-//Controlers
-    // require_once "App/Controller/Controller.php";
-    // require_once "App/Controller/ErrorController.php";
-    // require_once "App/Controller/HomeController.php";
-//Models
-    // require_once "App/Model/Model.php";
 //Template do site
     $links = file_get_contents("App/Template/links.html");
     $template = file_get_contents("App/Template/template.html");
