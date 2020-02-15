@@ -2,6 +2,6 @@
 
 class ErrorController extends Controller {
     public static function index(){
-        echo 'erro 404';
+        echo '<H1>erro 404</H1>';
     }
 }
